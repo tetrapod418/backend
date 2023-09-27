@@ -12,7 +12,7 @@ const corsOptions = {
     origin: 'http://localhost:3000'
 }
 // kintoneのデータ取得先を設定
-const multipleRecordsEndpoint = 'https://1lc011kswasj.cybozu.com/k/v1/records.json';
+const multipleRecordsEndpoint = 'https://[yourdomain].cybozu.com/k/v1/records.json';
 app.get('/getData', cors(corsOptions), async (req, res) => {
     const fetchOptions = {
         method: 'GET',
